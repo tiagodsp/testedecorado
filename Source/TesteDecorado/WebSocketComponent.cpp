@@ -35,6 +35,7 @@ void UWebSocketComponent::DefaultConnect() {
 	this->CustomConnect(this->ServerIP, this->ServerPort);
 }
 
+// Allows to connect to a custom server
 void UWebSocketComponent::CustomConnect(FString IpAddress, int32 Port) {
 	FString address = "ws://" + IpAddress + ":" + FString::FromInt(Port);
 	string uri = string(TCHAR_TO_UTF8(*address));
@@ -56,6 +57,7 @@ void UWebSocketComponent::CustomConnect(FString IpAddress, int32 Port) {
 	}
 }
 
+// Disconnect from current server
 void UWebSocketComponent::Disconnect()
 {
 	try {
@@ -67,6 +69,7 @@ void UWebSocketComponent::Disconnect()
 	}
 }
 
+// Update data from Server
 void UWebSocketComponent::Update() {
 	try {
 		this->c.run_one();
