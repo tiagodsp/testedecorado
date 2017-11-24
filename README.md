@@ -60,6 +60,23 @@ Exemplo.
 
 </center>
 
+Servidor do exemplo acima:
+```python
+#!/usr/bin/python
+from sys import stdout
+from time import sleep
+
+# Count from 1 to 10 with a sleep
+count = 0
+while (True):
+  print(count)
+  count = (count + 1) % 360
+  stdout.flush()
+  sleep(0.01)
+```
+
+
+
 ## Cumprimento de Requisitos
 
 ### Requisitos funcionais 1
@@ -101,3 +118,6 @@ Exemplo.
 * Dependência de WebSocket++
 ### Biblioteca WebSocket++
 * Versão 0.7.0
+### Servidor WebSocket
+* IP: 138.197.172.94
+* Porta: 9002 
