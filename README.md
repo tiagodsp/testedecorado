@@ -3,10 +3,10 @@
 Game de posicionamento de móveis em ambiente 3D.
 ## Funcionalidades
 ### Seleção de móveis
-Clique no menu lateral para selecionar um móvel na lista. Ao clicar, basta posicionar o móvel no cenário e pressionar `Botão Esquerdo do Mouse` para confirmar. Podem ser utilizados os atalhos correspondentes as teclas `1` a `9`
+Clique no menu lateral para selecionar um móvel na lista. Ao clicar, basta posicionar o móvel no cenário e pressionar `Botão Esquerdo do Mouse` para confirmar. Podem ser utilizados os atalhos correspondentes as teclas `1` a `9`.
 <center>
 
-![Seleção de Móveis](./Resources/Images/ObjectPlacement01.gif)
+![](./Resources/Images/ObjectPlacement01.gif)
 
 </center>
 
@@ -16,7 +16,7 @@ Clique no menu lateral para selecionar um móvel na lista. Ao clicar, basta posi
 Ao selecionar um móvel, um menu é exibido com botões de ações que podem ser executadas pelo usuário.
 <center>
 
-![Menu de opções](./Resources/Images/img01.png)
+![](./Resources/Images/img01.png)
 
 </center>
 
@@ -31,11 +31,11 @@ Ao selecionar um móvel, um menu é exibido com botões de ações que podem ser
 
 <center>
 
-![Seleção de Móveis](./Resources/Images/ObjectPlacement03.gif)
+![](./Resources/Images/ObjectPlacement03.gif)
 Alterar Textura
 
 
-![Seleção de Móveis](./Resources/Images/ObjectPlacement02.gif)
+![](./Resources/Images/ObjectPlacement02.gif)
 Sincronizar com WebSocket
 </center>
 
@@ -66,7 +66,7 @@ Servidor do exemplo acima:
 from sys import stdout
 from time import sleep
 
-# Count from 1 to 10 with a sleep
+# Loop from 0 to 359
 count = 0
 while (True):
   print(count)
